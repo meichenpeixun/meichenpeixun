@@ -1,0 +1,3 @@
+/*! LPS4.0 2016-08-29
+*/
+function captcha(t,a,c){c=c||function(){};var e={obj:t,ty:a};void 0==e.ty&&(e.ty="");var s=function(t){switch(t.appendTo(e.obj),t.onSuccess(function(){$(".tab-pane.active .captcha").siblings(".v_sign_tips").removeClass("error").html("").show(500)}),e.ty){case"mobile/":captchaObjF=t;break;case"verifyMobile/":c.call(this,t);break;case"verifyEmail/":c.call(this,t);break;case"":captchaObjF3=t;break;default:captchaObjF2=t}};$.ajax({url:"/geetest/getcaptcha/"+e.ty,type:"get",dataType:"json",success:function(t){initGeetest({gt:t.gt,challenge:t.challenge,product:"float",offline:!t.success},s)}})}$.getScript("http://static.geetest.com/static/tools/gt.js");var captchaObjF,captchaObjF2,captchaObjF3;
