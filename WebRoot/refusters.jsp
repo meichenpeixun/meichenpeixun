@@ -10,8 +10,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <base href="<%=basePath%>">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>美享厅广告系统用户中心</title>
-    
-    
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
@@ -157,17 +155,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		}
 	}
 	
-	/* function ss2(){
-		var yzcode=$("#yzcode").val();
-		if(yzcode==""){
-		$("#autos1").html("<img src='images/false.png' style='margin-right: 10px; vertical-align: middle;' />验证码不能为空");
-		}
-		if(yzcode.length<6){
-			$("#autos1").html("<img src='images/false.png' style='margin-right: 10px; vertical-align: middle;' />验证码格式不正确");
-		}else{
-		$("#autos").html("<img src='images/true.png' style='margin-right: 10px; vertical-align: middle;' />");
-		}
-	} */
 	</script>
   </head>
   
