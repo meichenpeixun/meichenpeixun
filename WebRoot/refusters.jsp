@@ -155,6 +155,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		}
 	}
 	
+	/* function ss2(){
+		var yzcode=$("#yzcode").val();
+		if(yzcode==""){
+		$("#autos1").html("<img src='images/false.png' style='margin-right: 10px; vertical-align: middle;' />验证码不能为空");
+		}
+		if(yzcode.length<6){
+			$("#autos1").html("<img src='images/false.png' style='margin-right: 10px; vertical-align: middle;' />验证码格式不正确");
+		}else{
+		$("#autos").html("<img src='images/true.png' style='margin-right: 10px; vertical-align: middle;' />");
+		}
+	} */
 	</script>
   </head>
   

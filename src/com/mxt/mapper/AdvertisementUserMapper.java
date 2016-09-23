@@ -11,6 +11,8 @@ import com.mxt.entity.AdvertisementUser;
 @Mapper("advertisementUserMapper")
 public interface AdvertisementUserMapper {
 	
+	
+	
 	@Select("select * from advertisementUser where adUserName = #{adUserName} or phone = #{adUserName}")
 	public AdvertisementUser findAdUserByUserName(String adUserName);		//根据用户名来查询信息
 	
